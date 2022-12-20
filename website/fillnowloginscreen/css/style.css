@@ -1,0 +1,253 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.loginscreen {
+  position: relative;
+  /* overflow: hidden; */
+  /* height: 83vh; */
+}
+
+.loginscreen .b-layer {
+  position: relative;
+  height: 450px;
+}
+
+.loginscreen  .layer-bg {
+  position: absolute;
+  overflow: hidden;
+  height: 450px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/* .layer-bg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #57cbcf;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -115px;
+}*/
+
+.loginscreen  .layer-bg-mod {
+  /* position: relative; */
+  /* overflow: hidden; */
+  height: 518px;
+}
+
+.loginscreen  .b-layer-big {
+  position: relative;
+  height: 600px;
+}
+
+.loginscreen  .layer-big-bg {
+  position: absolute;
+  overflow: hidden;
+  height: 600px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.loginscreen  .layer-big-bg:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #6fd386;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -115px;
+}
+
+.loginscreen  .shape-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 368px;
+}
+.loginscreen  .shape-bg:before {
+  content: '';
+  width: 100%;
+  height: 368px;
+  background-image: url("../img/login-shape-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.loginscreen  .page-layer-bg4 {
+    background-image: url(../img/loginbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    top: 0;
+}
+
+.loginscreen  .layer-bg-mod:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #246bad;
+    background: -moz-linear-gradient(top, #246bad 0%, #00c8c8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #246bad), color-stop(100%, #00c8c8));
+    background: -webkit-linear-gradient(top, #246bad 0%, #00c8c8 100%);
+    background: -o-linear-gradient(top, #246bad 0%, #00c8c8 100%);
+    background: -ms-linear-gradient(top, #246bad 0%, #00c8c8 100%);
+    background: linear-gradient(to bottom, rgb(66, 173, 17) 0%, #41a147 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#246bad', endColorstr='#00c8c8',GradientType=0 );
+    opacity: .8;
+}
+.loginscreen  .loginWrapper{
+	position:relative
+}
+
+.loginscreen  .loginContent{
+	position:absolute;
+	top: 109px;
+	width: 100%;
+}
+
+.loginscreen  .inputImage{
+	 background: url(../img/mailicon.png);
+	 background-position: 14px 12px;
+	 background-repeat: no-repeat;
+	 /* position: relative; */
+	 /* z-index: 1; */
+}
+.loginscreen  .inputImage .form-control{
+	background: #d84c4c00 ! important;
+	margin: 18px 0;
+	padding-left: 52px;
+	box-shadow: none;
+	border-color: #0000004f;
+	border-radius: 0;
+	width: 100%;
+	height: 40px;
+}
+
+.loginscreen  .loginForm{
+	background-color:#fff;
+	padding: 20px 36px;
+	width: 65%;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 13;
+	box-shadow: 2px 6px 32px 4px #9494943d;
+}
+
+.loginscreen  .loginText{
+	color:#fff;
+	font-size: 40px;
+	position:relative;
+	z-index:2;
+	margin-top: 41px;
+	font-family: 'Stardos Stencil', cursive;
+	text-transform:uppercase;
+	font-weight:700;
+	line-height: 52px;
+}
+.loginscreen  .pass{
+	 background: url(../img/passwordicon.png);
+	 background-position: 13px 11px;
+	 background-repeat: no-repeat;
+}
+.loginscreen  input[type='checkbox']{
+	width: 15px;
+	height: 15px;
+	vertical-align: bottom;
+	margin-right: 10px !important;
+}
+
+
+.loginscreen  .btn-login{
+    display: block;
+    width: 100%;
+    padding: 6px;
+    box-shadow: none;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    background: #0073be;
+    margin: 19px 0;
+    box-shadow: 2px 6px 10px 2px #edecec;
+    }
+.loginscreen  .forgetPass{
+	color:#0073be;
+	
+}
+.loginscreen  .logoWrapper{
+	margin-bottom: 25px;
+}
+
+.loginscreen  .register{
+	display:flex;
+	justify-content: space-between;
+}
+.loginscreen  .register p{
+	color:#0073be
+}
+
+@media screen and (max-width: 767px){
+	.loginscreen  .loginForm{
+		width:90% !important;
+		margin:0 auto
+		
+	}
+.loginscreen  .loginContent{
+	top:0
+}
+.loginscreen  .loginText{
+	font-size:17px;
+}
+}
+
+@media screen and (max-width: 1024px){
+	
+	.loginscreen  .loginForm{
+		width:100%
+	}
+}
+.loginscreen  .introd{
+	font-size:20px;
+	text-align:center
+}
+.loginscreen  p.agreementTxt{
+	color:#000;
+	text-align:center;
+	margin-top:0
+}
+.loginscreen  .person{
+	 background: url(../img/personicon.png);
+	 background-position: 13px 11px;
+	 background-repeat: no-repeat;
+}
+.loginscreen  .phone{
+	 background: url(../img/phone.png);
+	 background-position: 13px 11px;
+	 background-repeat: no-repeat;
+}

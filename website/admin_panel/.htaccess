@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine on
+RewriteCond $1 !^(index\.php|resources|images|css|js|robots\.txt|favicon\.ico)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+<FilesMatch "\.(php|cgi|pl|htm|xml|txt|html|js|css)>
+   FileETag None
+   Header unset ETag
+   Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+   Header set Pragma "no-cache"
+   Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+</FilesMatch>
